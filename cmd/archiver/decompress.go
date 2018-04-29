@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/a-hilaly/dec"
+	"github.com/a-hilaly/go-archive"
 
 	"github.com/google/subcommands"
 )
@@ -31,7 +31,7 @@ func (cc *decompressCmd) SetFlags(f *flag.FlagSet) {
 }
 
 func (cc *decompressCmd) Execute(_ context.Context, f *flag.FlagSet, _ ...interface{}) subcommands.ExitStatus {
-	worker, err := archiver.Pick(cc.kind)
+	worker, err := archive.Pick(cc.kind)
 	if err != nil {
 		log.Fatalf("Compression type unsupported %s", cc.kind)
 	}

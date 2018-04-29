@@ -1,0 +1,15 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.10
+
+    working_directory: /go/src/github.com/a-hilaly/go-archive
+
+    steps:
+      - checkout
+      
+      - run:
+          name: test package
+          command: |
+            go test -v
