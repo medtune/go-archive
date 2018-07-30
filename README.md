@@ -25,10 +25,6 @@ Subcommands:
 	decompress       decompress a file
 	flags            describe all known top-level flags
 	help             describe subcommands and their syntax
-
-
-Use "compress flags" for a list of top-level flags
-exit status 2
 ```
 ## Subcommands
 
