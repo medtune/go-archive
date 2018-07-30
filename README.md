@@ -1,15 +1,17 @@
 # go-archive
 
-[![CircleCI](https://circleci.com/gh/medtune/go-archive/tree/master.svg)](https://circleci.com/gh/medtune/go-archive/tree/master)
+[![CircleCI](https://circleci.com/gh/medtune/go-archive.svg?style=svg)](https://circleci.com/gh/medtune/go-archive)
 
 Go tool for creating and reading archive files.
+
+###### latest release 0.1.0
 
 ## Install
 
 Get with go command
 
 ```
-go get -u github.com/medtune/go-archive/cmd/archiver
+go get -u github.com/medtune/go-archive/...
 ```
 
 ## Usage
