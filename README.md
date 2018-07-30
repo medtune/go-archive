@@ -1,6 +1,6 @@
 # go-archive
 
-[![CircleCI](https://circleci.com/gh/A-Hilaly/go-archive/tree/master.svg?style=svg&circle-token=e2065cf69b74bbb9357229b8cab69fe30ef6e25a)](https://circleci.com/gh/A-Hilaly/go-archive/tree/master)
+[![CircleCI](https://circleci.com/gh/medtune/go-archive/tree/master.svg)](https://circleci.com/gh/medtune/go-archive/tree/master)
 
 Go tool for creating and reading archive files.
 
@@ -9,7 +9,7 @@ Go tool for creating and reading archive files.
 Get with go command
 
 ```
-go get -u github.com/a-hilaly/go-archive/cmd/archiver
+go get -u github.com/medtune/go-archive/cmd/archiver
 ```
 
 ## Usage
@@ -55,5 +55,6 @@ archiver compress [-d destination] [-k archive type] somefile:
 
 - ~~archiver commmand~~
 - ~~zip support~~
+- support concurent Compress/Decompress mechanics
 - tar support
 - gzib support

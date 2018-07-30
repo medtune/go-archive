@@ -7,7 +7,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/a-hilaly/go-archive"
+	"github.com/medtune/go-archive"
 
 	"github.com/google/subcommands"
 )

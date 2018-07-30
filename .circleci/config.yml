@@ -4,12 +4,22 @@ jobs:
     docker:
       - image: circleci/golang:1.10
 
-    working_directory: /go/src/github.com/a-hilaly/go-archive
+    working_directory: /go/src/github.com/medtune/go-archive
 
     steps:
       - checkout
+
+      - run:
+          name: download dependencies
+          command: |
+            go get -v -t -d ./...
       
       - run:
           name: test package
           command: |
             go test -v
+
+      - run:
+          name: build binaries
+          command: |
+            go build -v -o archiver ./cmd/archiver/*.go
